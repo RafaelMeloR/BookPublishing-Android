@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PublisherActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarPublisherUpdate"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <!-- Publisher ID -->
+
+    <TextView
+        android:id="@+id/textViewPubIdPublisher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="4dp"
+        android:text="@string/textViewPubId"
+        app:layout_constraintEnd_toStartOf="@+id/editTextPubIdPublisher"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextPubIdPublisher"
+        android:layout_width="295dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="56dp"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!-- Publisher Name -->
+    <TextView
+        android:id="@+id/textViewPubNamePublisher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="@string/textViewPubName"
+        app:layout_constraintEnd_toStartOf="@+id/editTextPubNamePublisher"
+        app:layout_constraintHorizontal_bias="0.695"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPubIdPublisher" />
+
+    <EditText
+        android:id="@+id/editTextPubNamePublisher"
+        android:layout_width="295dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/editTextPubIdPublisher"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextPubIdPublisher"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPubIdPublisher" />
+    <!-- Publisher Address -->
+
+    <TextView
+        android:id="@+id/textViewPubAddPublisher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="@string/textViewPubAdd"
+        app:layout_constraintEnd_toStartOf="@+id/editTextPubAddPublisher"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPubNamePublisher" />
+
+    <EditText
+        android:id="@+id/editTextPubAddPublisher"
+        android:layout_width="295dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="8dp"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/editTextPubNamePublisher"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextPubNamePublisher"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPubNamePublisher" />
+
+    <!-- Publisher Update Button -->
+    <Button
+        android:id="@+id/buttonPublisherUpdatePublisher"
+        android:layout_width="192dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/buttonPublisherUpdatePublisher"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPubAddPublisher" />
+
+    <Button
+        android:id="@+id/buttonPublisherClearPublisher"
+        android:layout_width="192dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/clear_publisher"
+        app:layout_constraintEnd_toEndOf="@+id/buttonPublisherUpdatePublisher"
+        app:layout_constraintStart_toStartOf="@+id/buttonPublisherUpdatePublisher"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPublisherUpdatePublisher" />
+
+    <Button
+        android:id="@+id/buttonPublisherAddPublisher"
+        android:layout_width="192dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/add_publisher"
+        app:layout_constraintEnd_toEndOf="@+id/buttonPublisherClearPublisher"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="@+id/buttonPublisherClearPublisher"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPublisherClearPublisher" />
+
+    <Button
+        android:id="@+id/buttonPublisherSearchPublisher"
+        android:layout_width="192dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/search_publisher"
+        app:layout_constraintEnd_toEndOf="@+id/buttonPublisherAddPublisher"
+        app:layout_constraintStart_toStartOf="@+id/buttonPublisherAddPublisher"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPublisherAddPublisher" />
+
+    <Button
+        android:id="@+id/buttonPublisherDeletePublisher"
+        android:layout_width="192dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="16dp"
+        android:text="Delete Publisher"
+        app:layout_constraintEnd_toEndOf="@+id/buttonPublisherSearchPublisher"
+        app:layout_constraintStart_toStartOf="@+id/buttonPublisherSearchPublisher"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPublisherSearchPublisher" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

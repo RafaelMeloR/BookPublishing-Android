@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">BookPublishingProject</string>
+    <string name="textViewPubId">Pub Id</string>
+    <string name="textViewPubName">Pub Name</string>
+    <string name="textViewPubAdd">Pub Add</string>
+    <string name="buttonNext">Next</string>
+    <string name="buttonPublisherDetails">Publisher Details</string>
+    <string name="buttonPublisherUpdatePublisher">Publisher Update</string>
+    <string name="show_book">Show book</string>
+    <string name="clear_publisher">Clear Publisher</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_publisher">Add publisher</string>
+    <string name="search_publisher">Search Publisher</string>
+    <string name="book_id">Book id</string>
+    <string name="book_author">Book Author</string>
+    <string name="bookisbn">Book ISBN</string>
+    <string name="book_pld">Book Pld</string>
+    <string name="book_price">Book Price</string>
+    <string name="add_book">Add Book</string>
+    <string name="book_type">Book Type</string>
+    <string name="chap_id">Chap Id</string>
+    <string name="pub_add">Pub Add</string>
+    <string name="pub_price">Pub Price</string>
+    <string-array name="book_types">
+        <item>BG book for beginner</item>
+        <item>MD book for intermediate</item>
+        <item>EX book for expert</item>
+    </string-array>
+</resources>
