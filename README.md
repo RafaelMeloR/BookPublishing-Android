@@ -1,6 +1,4 @@
-# BookPublishing-Android
-
-# Book Publishing Project
+# BookPublishing-Android 
 
 ## Overview
 This project entails the development of an Android application for managing book publishing information. It incorporates various functionalities including displaying publisher details, adding, updating, and deleting records, managing books and chapters, and more.
